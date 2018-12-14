@@ -27,6 +27,11 @@ class Child : public Parent
       int id_child;
 };
 
+int somme(int a, int b)
+{
+    int result = a + b;
+    return result;
+}
 int main(int argc, char *argv[])
 {
 //    taille en bits de tableaux
@@ -67,4 +72,30 @@ int main(int argc, char *argv[])
     toto.id_parent = 91;
     cout << "Child id is " <<  toto.id_child << endl;
     cout << "Parent id is " <<  toto.id_parent << endl;
+//    Comportement if
+//    On rentre
+    if (0.1)
+    {
+        printf("if 0.1\n");
+    }
+//    On rentre pas
+    if (0)
+    {
+        printf("if 0\n");
+    }
+//    On rentre
+    if (-1)
+    {
+        printf("if -1\n");
+    }
+
+//    Mot clé auto en C++ 11
+    auto a = 1.1;
+    cout << "Auto keyword, sizeof auto var : " << sizeof(a) << endl;
+
+//    Fonction somme
+    int x = 1;
+    int y = 2;
+    int result = somme(x, y);
+    printf("%d", result);
 }
