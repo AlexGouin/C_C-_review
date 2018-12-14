@@ -1,8 +1,8 @@
-#include <QCoreApplication>
+#include <stdio.h>
+#include <stdint.h>
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
 
-    return a.exec();
+    printf("Hello World!");
 }
